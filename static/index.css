@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    position: absolute; 
+    top: 1%;
+    left: 2%; 
+}
+
+header h1 a {  
+    font-size: 230%; 
+    color: red;
+    display: block;            
+}
+
+header .service_list li {
+    display: inline-block;
+    margin-top: 1%;
+}
+
+header .service_list li a {
+    display: block;
+    color: red;
+    font-size: 180%;
+    height: 81px; /*클릭범위 늘리기*/
+    padding: 0 35px;
+    line-height: 81px;
+}
+
+header .service_list li a:hover {
+    font-weight: bold;
+}
+
+header .personal_service {
+    position: absolute;
+    right: 0;
+    top: 1%;
+}
+
+header .personal_service li {
+    position: relative;
+    float: left;
+}
+
+header .personal_service li:after {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    top: 50%;        
+    width: 1px;
+    height: 7px;    
+    transform: translateY(-50%);     
+    background: white;              
+}
+
+header .personal_service li:first-child:after {
+    display: none;
+}
+
+header .personal_service li a {
+    color: red;
+    display: block;
+    height: 81px;
+    padding: 0 10px;
+    line-height: 81px;
+}
+
+header .personal_service li:last-child {
+    padding-right: 0; 
+}
